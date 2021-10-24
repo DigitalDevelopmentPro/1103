@@ -1,43 +1,204 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Яндекс</title>
-
-	<!-- Подключение normalize.css -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<!-- Подключение пользовательских стилей -->
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-	<div class="yandex">
-		<a href="https://yandex.ru" target="_blank">
-			<img class="logo" src="img/logo.svg" alt="Яндекс">
-		</a>
-		<p class="text">Войдите, чтобы продолжить</p>
 
-		<form class="yandex-form" action="#" method="POST">
-			<input class="login" type="text" placeholder="Введите логин, почту или телефон">
-			<a class="link" href="#" target="_blank">Не помню логин</a>
-			<button class="btn btn-login btn-warning" type="submit">Войти</button>
-		</form>
-		<a class="btn btn-register btn-default" href="#" target="_blank">Зарегистрироваться</a>
+    <!-- main container-->
+    <div class="wrapper">
+       <aside class="sidebar">
+           <img class="my-photo" src="./img/photo.jpg" alt="my photo"> 
 
-		<p class="label">Войти с помощью</p>
-		<nav class="social-services">
-			<a href="#" class="icon icon-vk">Вконтакте</a>
-			<a href="#" class="icon icon-fb">Facebook</a>
-			<a href="#" class="icon icon-google">Google</a>
-			<a href="#" class="icon icon-qr"><span>QR-код</span></a>
-			<a href="#" class="icon icon-more">Ещё</a>
-		</nav>
-	</div>
+           <div class="left-sidebar-container">
+        
+                <!-- contacts container-->
+                <div class="contacts-container">
+                    <h3 class="contacts-title">Contacts</h3>
+                    <div>
+                        <span class="contacts-data-title">Tel:</span> <a class="contacts-data" href="Tel:+79991000000">+7 999 100 00 00</a>
+                    </div>
+                    <div>
+                        <span class="contacts-data-title">Email:</span> <a class="contacts-data" href="mailto:email@gmail.com">email@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Tech skills container-->
+                <div class="tech-skills-container">
+                    <h3 class="tech-skills-title">Tech skills</h3>
+                    <ul>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">HTML5</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">CSS3</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">JavaScript</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">GIT</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">WebPack</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">React.js</span> 
+                        </li>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">Node.js</span> 
+                        </li>
+                    </ul>
+                </div>
+                            
+                <!-- Soft skills container-->
+                <div class="tech-skills-container">
+                    <h3 class="tech-skills-title">Soft skills</h3>
+                    <ul>
+                        <li class="tech-skills-item">
+                            <span class="tech-skills-text">Scrum</span>
+                        </li>
+                        <li class="tech-skills-item"> 
+                            <span class="tech-skills-text">Agile</span>
+                        </li> 
+                        <li class="tech-skills-item">
+                             <span class="tech-skills-text">Teamwork</span>
+                         </li>                   
+                        
+                    </ul>        
+                </div>
+           </div>
+
+        </aside>  
+
+        <!-- about me container-->
+        <div class="about-me-container">
+
+            <!--about me main info-->
+            <div>
+                <h2>Front-end Developer</h2>
+                <h1>FirstName LastName</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            </div>
+
+            <!-- projects container-->
+            <div>
+                <h3>Projects</h3>
+                <ol>
+                    <li>
+                        <a href="https://lovecamp.goit.ua/">https://lovecamp.goit.ua/</a>
+                        <span>..........</span>
+                        <span>[ HTML5, CSS3 ]</span>
+                    </li>
+                    <li>
+                        <a href="https://cryptohub.goit.ua/">https://cryptohub.goit.ua/</a>
+                        <span>.........</span>
+                        <span>[ JavaScript ]</span>
+                    </li>
+                    <li>
+                        <a href="https://kidslike.goit.co.ua/">https://kidslike.goit.co.ua/</a>
+                        <span>........</span>
+                        <span>[ React.js, Node.js ]</span>
+                    </li>
+                </ol>
+            </div>
+
+            <!--experience-->
+            <div>
+                <h3>Experience</h3>
+
+                <!--company 1-->
+                <div>
+                    <h4>Front-end Developer | Freelance</h4>
+                    <span>
+                        Month 2021 - up to now | Russia 
+                    </span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Risus commodo viverra maecenas.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                        
+                    </ul>
+                         
+                </div>
+
+                <!--company 2-->
+                <div>
+                    <h4>Professional | Company</h4>
+                    <span>
+                        Month 2019 - Month 2021 | Russia
+                    </span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Risus commodo viverra maecenas.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                    </ul>
+                </div> 
+
+                <!--company 3-->
+                <div>
+                    <h4>Professional | Company</h4>
+                    <span>
+                        Month 2010 - Month 2019 | Russia
+                    </span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Risus commodo viverra maecenas.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                    </ul>
+                </div> 
+            </div>  
+
+            <!--education-->
+            <div>
+                <div>
+                    <h3>Education</h3>
+                    <p>Digital Academy | Russia</p>
+                    <p>Developer</p>
+                    <span>
+                        2017 | Russia
+                    </span>
+                </div>
+
+                <div>
+                    <p>International Management Academy | Russia</p>
+                    <p>Entrepreuner</p>
+                    <span>
+                        2002 | Russia
+                    </span>
+                </div>
+
+                <div>
+                    <h4>State University | Russia</h4>
+                    <h4>International Relations</h4>
+                    <span>
+                        2001 | Russia
+                    </span>
+                </div>               
+            </div>
+        </div>
+    </div>  
+<footer>
+
+<!--прокрутка страницы наверх-->
+<p id="back-top">
+    <a href="#top"><span></span>Вверх</a>
+</p>
+
+</footer>
 
 </body>
+
 
 </html>
